@@ -1,7 +1,7 @@
 package com.cs.cachingapp.service.impl;
 
 
-import com.cs.cachingapp.EmployeeDto;
+import com.cs.cachingapp.dto.EmployeeDto;
 import com.cs.cachingapp.entity.Employee;
 import com.cs.cachingapp.exception.ResourceNotFoundException;
 import com.cs.cachingapp.repository.EmployeeRepository;
@@ -92,21 +92,5 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     }
 
-//    @Override
-//    @Cacheable(cacheNames = CACHE_NAME, key = "#id")
-//    public EmployeeDto getEmployeeById(Long id) {
-
-//    @Override
-//    @CachePut(cacheNames = CACHE_NAME, key = "#result.id")
-//    public EmployeeDto createNewEmployee(EmployeeDto employeeDto) {
-
-//
-//    @Override
-//    @CachePut(cacheNames = CACHE_NAME, key = "#id")
-//    public EmployeeDto updateEmployee(Long id, EmployeeDto employeeDto) {
-
-//    @Override
-//    @CacheEvict(cacheNames = CACHE_NAME, key = "#id")
-//    public void deleteEmployee(Long id) {
 
 }

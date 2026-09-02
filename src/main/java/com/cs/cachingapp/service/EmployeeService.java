@@ -1,6 +1,6 @@
 package com.cs.cachingapp.service;
 
-import com.cs.cachingapp.EmployeeDto;
+import com.cs.cachingapp.dto.EmployeeDto;
 
 public interface EmployeeService {
 

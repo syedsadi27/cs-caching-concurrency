@@ -2,7 +2,7 @@ package com.cs.cachingapp.controller;
 
 
 
-import com.cs.cachingapp.EmployeeDto;
+import com.cs.cachingapp.dto.EmployeeDto;
 import com.cs.cachingapp.service.EmployeeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
