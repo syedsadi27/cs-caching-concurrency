@@ -25,10 +25,9 @@ public class SalaryAccountServiceImpl implements SalaryAccountService {
     @Override
     public void createAccount(Employee employee) {
 
-//        if(employee.getName().equals("Anuj")) throw new RuntimeException("Anuj is not allowed");
 
         SalaryAccount salaryAccount = SalaryAccount.builder()
-                .employee(employee)
+//                .employee(employee)
                 .balance(BigDecimal.ZERO)
                 .build();
 
@@ -36,7 +35,7 @@ public class SalaryAccountServiceImpl implements SalaryAccountService {
     }
 
     @Override
-    @Transactional(isolation = Isolation.REPEATABLE_READ)
+    @Transactional()
     public SalaryAccount incrementBalance(Long accountId) {
 
         SalaryAccount salaryAccount = salaryAccountRepository.findById(accountId)
